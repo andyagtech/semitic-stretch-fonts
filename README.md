@@ -26,7 +26,16 @@ and to Ge'ez (**መ ጠ ሠ ሐ ወ** consonant series × 7 vowel orders each).
 ### 2. Trigger characters
 
 - **Hebrew**: **U+05C6** HEBREW PUNCTUATION NUN HAFUKHA
-- **Syriac + Ethiopic**: **U+2060** WORD JOINER (script=Common, stays in the run)
+- **Syriac + Ethiopic**: **U+E000** (Private Use Area)
+
+The Syriac and Ethiopic trigger has to be a PUA codepoint because
+Chrome/Blink strips Unicode "default-ignorable" format characters
+(U+2060 WORD JOINER, U+200B ZWSP, U+200C ZWNJ, U+200D ZWJ) *before*
+HarfBuzz shaping runs — so ligatures keyed on those codepoints never fire
+in the browser, even though `hb-shape` on the same font applies them
+correctly. U+E000 is script=Unknown (inherits neighbors' script, so the
+Syriac / Ethiopic shaping run stays intact) and is not default-ignorable,
+so Chrome passes it through untouched.
 
 For the Syriac cursive fonts, U+0640 (Arabic tatweel) is also preserved as
 the font's native cursive-bridging kashida.
@@ -110,8 +119,8 @@ Then insert stretch triggers between letters to widen them:
 
 ```
 בְּרֵאשִׁ׆׆׆ית      ← Hebrew: 3× U+05C6 after שׁ
-ܪ⁠⁠⁠ܝܫܝܬ         ← Syriac: 3× U+2060 after ܪ
-መ⁠⁠⁠              ← Ethiopic: 3× U+2060 after መ
+ܪܝܫܝܬ         ← Syriac: 3× U+E000 after ܪ
+መ              ← Ethiopic: 3× U+E000 after መ
 ```
 
 ---

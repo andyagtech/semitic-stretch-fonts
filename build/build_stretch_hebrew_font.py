@@ -652,12 +652,13 @@ NOTO_SANS_SYRIAC = {
     "step": 150,
     "lsb_mode": "mono",  # fixes stretched-letter overlap; see FRANK_RUHL note
     "language_system": "syrc",  # Syriac script tag (as opposed to hebr)
-    # Widening trigger: U+2060 (Word Joiner), NOT U+0640 tatweel.
-    # Reason: separates the two behaviors — Word Joiner fires the widening
-    # ligature (letter → widened variant), while U+0640 stays available as
-    # the font's natural cursive tatweel for baseline bridging. Both are
-    # script=Common so they stay in the Syriac shaping run.
-    "stretch_codepoint": 0x2060,
+    # Widening trigger: U+E000 (Private Use Area). Chrome/Blink strips
+    # U+2060 (Word Joiner) and other Unicode "default-ignorable" format
+    # characters BEFORE HarfBuzz shaping runs — so ligatures keyed on U+2060
+    # never fire in the browser (hb-shape works fine because it doesn't
+    # pre-filter). U+E000 is PUA (script=Unknown, inherits neighbors' script)
+    # and is not default-ignorable, so Chrome passes it through untouched.
+    "stretch_codepoint": 0xE000,
     "letters": {
         # Dalath: bar-class. Bar zone is the flat top portion; x_cutoff picks
         # a point between the stretchable left curve and the anchored right
@@ -742,12 +743,11 @@ NOHADRA_SAPNA = {
     "step": 150,
     "lsb_mode": "mono",
     "language_system": "syrc",
-    # Widening trigger: U+2060 (Word Joiner), NOT U+0640 tatweel.
-    # Reason: separates the two behaviors — Word Joiner fires the widening
-    # ligature (letter → widened variant), while U+0640 stays available as
-    # the font's natural cursive tatweel for baseline bridging. Both are
-    # script=Common so they stay in the Syriac shaping run.
-    "stretch_codepoint": 0x2060,
+    # Widening trigger: U+E000 (Private Use Area). See NOTO_SANS_SYRIAC
+    # comment — U+2060 is stripped by Chrome as a default-ignorable format
+    # character before HarfBuzz shaping, so ligatures keyed on it never fire
+    # in browsers. U+E000 sidesteps that path.
+    "stretch_codepoint": 0xE000,
     # Nohadra is non-cursive block-style. Auto-justify clusters tatweels on
     # stretchable letters, and our widening ligature consumes every one into
     # a widened variant. Override the font's natural baseline-height (y≈101)
@@ -809,8 +809,11 @@ NOHADRA_AMEDIA = {
 # decoration stay in place. Modelled on the manuscript calligraphic
 # widening tradition (14th–19th c. illuminated Ge'ez).
 #
-# Widening trigger: U+2060 (Word Joiner) — same as Syriac. script=Common
-# so it stays in the Ethiopic run and the ligature substitution fires.
+# Widening trigger: U+E000 (Private Use Area) — same as Syriac. Chrome
+# strips U+2060 (Word Joiner) as a default-ignorable format character
+# before HarfBuzz shaping, so ligatures keyed on it never fire in browsers.
+# U+E000 is PUA (script=Unknown, inherits neighbors' script) and is not
+# default-ignorable, so Chrome passes it through untouched.
 # `override_trigger_glyph: True` keeps unmatched triggers invisible.
 _ETH_SERIES = {
     # base_cp: (name, x_cutoff)
@@ -851,7 +854,7 @@ NOTO_SERIF_ETHIOPIC = {
     "step": 100,
     "lsb_mode": "mono",
     "language_system": "ethi",  # OpenType script tag for Ethiopic
-    "stretch_codepoint": 0x2060,
+    "stretch_codepoint": 0xE000,
     "override_trigger_glyph": True,
     "letters": _ETHIOPIC_LETTERS,
 }

@@ -1,11 +1,11 @@
 {
   "name": "semitic-stretch-fonts",
   "description": "Custom Semitic-script fonts with kashida-style horizontal widening ligatures for scribal-style column justification, plus centered mark positioning for Arabic vowels stacked on Hebrew consonants (Judeo-Arabic use).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "trigger_codepoints": {
     "hebrew": "U+05C6",
-    "syriac": "U+2060",
-    "ethiopic": "U+2060"
+    "syriac": "U+E000",
+    "ethiopic": "U+E000"
   },
   "fonts": [
     {
@@ -158,7 +158,7 @@
       "source_font": "Noto Sans Syriac (Google)",
       "source_url": "https://fonts.google.com/noto/specimen/Noto+Sans+Syriac",
       "license": "OFL",
-      "trigger": "U+2060 (Word Joiner)",
+      "trigger": "U+E000 (Private Use Area)",
       "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"],
       "notes": "Also preserves native U+0640 tatweel for cursive bridging."
     },
@@ -169,7 +169,7 @@
       "source_font": "Nohadra Syriac Sapna (Sargis Yonan)",
       "source_url": "https://en.wikipedia.org/wiki/Assyrian_Neo-Aramaic",
       "license": "OFL",
-      "trigger": "U+2060 (Word Joiner)",
+      "trigger": "U+E000 (Private Use Area)",
       "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"],
       "notes": "Block-style non-cursive Syriac."
     },
@@ -180,7 +180,7 @@
       "source_font": "Nohadra Syriac Amedia (Sargis Yonan)",
       "source_url": "https://en.wikipedia.org/wiki/Assyrian_Neo-Aramaic",
       "license": "OFL",
-      "trigger": "U+2060 (Word Joiner)",
+      "trigger": "U+E000 (Private Use Area)",
       "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"]
     },
     {
@@ -190,7 +190,7 @@
       "source_font": "Noto Serif Ethiopic (Google)",
       "source_url": "https://fonts.google.com/noto/specimen/Noto+Serif+Ethiopic",
       "license": "OFL",
-      "trigger": "U+2060 (Word Joiner)",
+      "trigger": "U+E000 (Private Use Area)",
       "widened_letters": ["መ series", "ጠ series", "ሠ series", "ሐ series", "ወ series"],
       "notes": "5 consonant series × 7 vowel orders = 35 stretchable fidels; matches the manuscript calligraphic tradition of widening horizontal decorative strokes."
     }
