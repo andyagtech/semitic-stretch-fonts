@@ -1,0 +1,6 @@
+Semitic Stretch Shlomo SemiStam
+Derived from: Shlomo SemiStam (Open Siddur project)
+Upstream: https://opensiddur.org/
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

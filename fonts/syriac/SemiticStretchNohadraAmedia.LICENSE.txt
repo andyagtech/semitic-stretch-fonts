@@ -1,0 +1,6 @@
+Semitic Stretch Nohadra Amedia
+Derived from: Nohadra Syriac Amedia (Sargis Yonan)
+Upstream: https://en.wikipedia.org/wiki/Assyrian_Neo-Aramaic
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

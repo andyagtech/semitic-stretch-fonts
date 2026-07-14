@@ -1,0 +1,6 @@
+Semitic Stretch Noto Sans Syriac
+Derived from: Noto Sans Syriac (Google)
+Upstream: https://fonts.google.com/noto/specimen/Noto+Sans+Syriac
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

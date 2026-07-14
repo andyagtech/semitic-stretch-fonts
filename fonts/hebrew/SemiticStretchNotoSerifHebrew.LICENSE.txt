@@ -1,0 +1,6 @@
+Semitic Stretch Noto Serif Hebrew
+Derived from: Noto Serif Hebrew (Google)
+Upstream: https://fonts.google.com/noto/specimen/Noto+Serif+Hebrew
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

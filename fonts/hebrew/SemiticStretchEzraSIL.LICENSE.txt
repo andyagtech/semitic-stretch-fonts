@@ -1,0 +1,6 @@
+Semitic Stretch Ezra SIL SR
+Derived from: Ezra SIL SR
+Upstream: https://software.sil.org/ezra/
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

@@ -1,0 +1,198 @@
+{
+  "name": "semitic-stretch-fonts",
+  "description": "Custom Semitic-script fonts with kashida-style horizontal widening ligatures for scribal-style column justification, plus centered mark positioning for Arabic vowels stacked on Hebrew consonants (Judeo-Arabic use).",
+  "version": "1.0.0",
+  "trigger_codepoints": {
+    "hebrew": "U+05C6",
+    "syriac": "U+2060",
+    "ethiopic": "U+2060"
+  },
+  "fonts": [
+    {
+      "file": "fonts/hebrew/SemiticStretchHebrew.ttf",
+      "family": "Semitic Stretch Hebrew",
+      "script": "Hebrew",
+      "source_font": "Frank Ruhl Libre",
+      "source_url": "https://fonts.google.com/specimen/Frank+Ruhl+Libre",
+      "license": "OFL",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "reserved_name_note": "Renamed per OFL §3."
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchKeterAramTsova.ttf",
+      "family": "Semitic Stretch Keter Aram Tsova",
+      "script": "Hebrew",
+      "source_font": "Keter Aram Tsova (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "reserved_name_note": "GPL derivative — remains GPL."
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchShmulikCLM.ttf",
+      "family": "Semitic Stretch Shmulik CLM",
+      "script": "Hebrew",
+      "source_font": "Shmulik CLM (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"]
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchHillelCLM.ttf",
+      "family": "Semitic Stretch Hillel CLM",
+      "script": "Hebrew",
+      "source_font": "Hillel CLM (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"]
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchGladiaCLM.ttf",
+      "family": "Semitic Stretch Gladia CLM",
+      "script": "Hebrew",
+      "source_font": "Gladia CLM (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"]
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchNotoSansHebrew.ttf",
+      "family": "Semitic Stretch Noto Sans Hebrew",
+      "script": "Hebrew",
+      "source_font": "Noto Sans Hebrew (Google)",
+      "source_url": "https://fonts.google.com/noto/specimen/Noto+Sans+Hebrew",
+      "license": "OFL",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"]
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchNotoSerifHebrew.ttf",
+      "family": "Semitic Stretch Noto Serif Hebrew",
+      "script": "Hebrew",
+      "source_font": "Noto Serif Hebrew (Google)",
+      "source_url": "https://fonts.google.com/noto/specimen/Noto+Serif+Hebrew",
+      "license": "OFL",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"]
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchShofar.ttf",
+      "family": "Semitic Stretch Shofar",
+      "script": "Hebrew",
+      "source_font": "Shofar (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"]
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchFreeMono.ttf",
+      "family": "Semitic Stretch FreeMono",
+      "script": "Hebrew",
+      "source_font": "GNU FreeMono",
+      "source_url": "https://www.gnu.org/software/freefont/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "notes": "Monospace. Each stretch level adds exactly one cell width."
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchNachlieliCLM.ttf",
+      "family": "Semitic Stretch Nachlieli CLM",
+      "script": "Hebrew",
+      "source_font": "Nachlieli CLM (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"]
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchMiriamMonoCLM.ttf",
+      "family": "Semitic Stretch Miriam Mono CLM",
+      "script": "Hebrew",
+      "source_font": "Miriam Mono CLM (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "notes": "Monospace serif."
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchEzraSIL.ttf",
+      "family": "Semitic Stretch Ezra SIL SR",
+      "script": "Hebrew",
+      "source_font": "Ezra SIL SR",
+      "source_url": "https://software.sil.org/ezra/",
+      "license": "OFL",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "notes": "Scholarly Bible font with full cantillation."
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchStamAshkenazCLM.ttf",
+      "family": "Semitic Stretch Stam Ashkenaz CLM",
+      "script": "Hebrew",
+      "source_font": "Stam Ashkenaz CLM (Culmus)",
+      "source_url": "https://culmus.sourceforge.io/",
+      "license": "GPL-2.0",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "notes": "Ashkenazi Torah-scribal style."
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchShlomoSemiStam.ttf",
+      "family": "Semitic Stretch Shlomo SemiStam",
+      "script": "Hebrew",
+      "source_font": "Shlomo SemiStam (Open Siddur project)",
+      "source_url": "https://opensiddur.org/",
+      "license": "OFL",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "notes": "Derived from Ezra SIL SR; full cantillation."
+    },
+    {
+      "file": "fonts/hebrew/SemiticStretchRashi.ttf",
+      "family": "Semitic Stretch Rashi",
+      "script": "Hebrew",
+      "source_font": "Noto Rashi Hebrew (Google)",
+      "source_url": "https://fonts.google.com/noto/specimen/Noto+Rashi+Hebrew",
+      "license": "OFL",
+      "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "notes": "Semi-cursive Rashi commentary script."
+    },
+    {
+      "file": "fonts/syriac/SemiticStretchNotoSansSyriac.ttf",
+      "family": "Semitic Stretch Noto Sans Syriac",
+      "script": "Syriac",
+      "source_font": "Noto Sans Syriac (Google)",
+      "source_url": "https://fonts.google.com/noto/specimen/Noto+Sans+Syriac",
+      "license": "OFL",
+      "trigger": "U+2060 (Word Joiner)",
+      "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"],
+      "notes": "Also preserves native U+0640 tatweel for cursive bridging."
+    },
+    {
+      "file": "fonts/syriac/SemiticStretchNohadraSapna.ttf",
+      "family": "Semitic Stretch Nohadra Sapna",
+      "script": "Syriac",
+      "source_font": "Nohadra Syriac Sapna (Sargis Yonan)",
+      "source_url": "https://en.wikipedia.org/wiki/Assyrian_Neo-Aramaic",
+      "license": "OFL",
+      "trigger": "U+2060 (Word Joiner)",
+      "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"],
+      "notes": "Block-style non-cursive Syriac."
+    },
+    {
+      "file": "fonts/syriac/SemiticStretchNohadraAmedia.ttf",
+      "family": "Semitic Stretch Nohadra Amedia",
+      "script": "Syriac",
+      "source_font": "Nohadra Syriac Amedia (Sargis Yonan)",
+      "source_url": "https://en.wikipedia.org/wiki/Assyrian_Neo-Aramaic",
+      "license": "OFL",
+      "trigger": "U+2060 (Word Joiner)",
+      "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"]
+    },
+    {
+      "file": "fonts/ethiopic/SemiticStretchNotoSerifEthiopic.ttf",
+      "family": "Semitic Stretch Noto Serif Ethiopic",
+      "script": "Ethiopic (Ge'ez)",
+      "source_font": "Noto Serif Ethiopic (Google)",
+      "source_url": "https://fonts.google.com/noto/specimen/Noto+Serif+Ethiopic",
+      "license": "OFL",
+      "trigger": "U+2060 (Word Joiner)",
+      "widened_letters": ["መ series", "ጠ series", "ሠ series", "ሐ series", "ወ series"],
+      "notes": "5 consonant series × 7 vowel orders = 35 stretchable fidels; matches the manuscript calligraphic tradition of widening horizontal decorative strokes."
+    }
+  ]
+}

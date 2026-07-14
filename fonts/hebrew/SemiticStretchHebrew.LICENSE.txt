@@ -1,0 +1,6 @@
+Semitic Stretch Hebrew
+Derived from: Frank Ruhl Libre
+Upstream: https://fonts.google.com/specimen/Frank+Ruhl+Libre
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

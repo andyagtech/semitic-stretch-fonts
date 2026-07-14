@@ -1,0 +1,6 @@
+Semitic Stretch Noto Serif Ethiopic
+Derived from: Noto Serif Ethiopic (Google)
+Upstream: https://fonts.google.com/noto/specimen/Noto+Serif+Ethiopic
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

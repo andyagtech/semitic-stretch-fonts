@@ -1,0 +1,6 @@
+Semitic Stretch Stam Ashkenaz CLM
+Derived from: Stam Ashkenaz CLM (Culmus)
+Upstream: https://culmus.sourceforge.io/
+License: GPL-2.0
+
+Full license text: ../../licenses/GPL-2.0.txt

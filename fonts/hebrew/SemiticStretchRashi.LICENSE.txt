@@ -1,0 +1,6 @@
+Semitic Stretch Rashi
+Derived from: Noto Rashi Hebrew (Google)
+Upstream: https://fonts.google.com/noto/specimen/Noto+Rashi+Hebrew
+License: OFL
+
+Full license text: ../../licenses/OFL.txt

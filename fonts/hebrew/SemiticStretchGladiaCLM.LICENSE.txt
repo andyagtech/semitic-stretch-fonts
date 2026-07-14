@@ -1,0 +1,6 @@
+Semitic Stretch Gladia CLM
+Derived from: Gladia CLM (Culmus)
+Upstream: https://culmus.sourceforge.io/
+License: GPL-2.0
+
+Full license text: ../../licenses/GPL-2.0.txt

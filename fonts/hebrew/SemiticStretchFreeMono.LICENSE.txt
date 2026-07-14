@@ -1,0 +1,6 @@
+Semitic Stretch FreeMono
+Derived from: GNU FreeMono
+Upstream: https://www.gnu.org/software/freefont/
+License: GPL-2.0
+
+Full license text: ../../licenses/GPL-2.0.txt
