@@ -1,0 +1,12 @@
+Semitic Stretch Hebrew (v2)
+Derived from: Frank Ruhl Libre
+Upstream: https://fonts.google.com/specimen/Frank+Ruhl+Libre
+License: OFL
+
+Full license text: ../../licenses/OFL.txt
+
+Notes:
+Second-generation build. Adds hand-tuned per-variant widening for
+aleph, ayin, tet, tzade, qof, and the finals — 22 widenable letters
+total, up from six in v1. Trigger character U+05C6 (Hebrew Punctuation
+Nun Hafukha). Compatible with mkmk mark-stacking for Judeo-Arabic use.

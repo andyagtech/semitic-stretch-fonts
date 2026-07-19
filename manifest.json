@@ -1,21 +1,33 @@
 {
   "name": "semitic-stretch-fonts",
   "description": "Custom Semitic-script fonts with kashida-style horizontal widening ligatures for scribal-style column justification, plus centered mark positioning for Arabic vowels stacked on Hebrew consonants (Judeo-Arabic use).",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "trigger_codepoints": {
     "hebrew": "U+05C6",
-    "syriac": "U+E000",
-    "ethiopic": "U+E000"
+    "syriac": "U+070D",
+    "ethiopic": "U+139A"
   },
   "fonts": [
     {
+      "file": "fonts/hebrew/SemiticStretchHebrew-v2.ttf",
+      "family": "Semitic Stretch Hebrew (v2)",
+      "script": "Hebrew",
+      "source_font": "Frank Ruhl Libre",
+      "source_url": "https://fonts.google.com/specimen/Frank+Ruhl+Libre",
+      "license": "OFL",
+      "widened_letters": ["א", "ב", "ד", "ה", "ו", "ז", "ח", "ט", "י", "ך", "כ", "ל", "ם", "ן", "ע", "ף", "פ", "צ", "ק", "ר", "ש", "ת"],
+      "notes": "Flagship font — 22 widenable letters including aleph, ayin, tet, tzade, qof, plus per-variant hand-tuning. Uses U+05C6 trigger.",
+      "reserved_name_note": "Renamed per OFL §3."
+    },
+    {
       "file": "fonts/hebrew/SemiticStretchHebrew.ttf",
-      "family": "Semitic Stretch Hebrew",
+      "family": "Semitic Stretch Hebrew (v1)",
       "script": "Hebrew",
       "source_font": "Frank Ruhl Libre",
       "source_url": "https://fonts.google.com/specimen/Frank+Ruhl+Libre",
       "license": "OFL",
       "widened_letters": ["ד", "ה", "ל", "ם", "ר", "ת"],
+      "notes": "First-generation build — six kalabush letters only. Superseded by v2.",
       "reserved_name_note": "Renamed per OFL §3."
     },
     {
@@ -190,9 +202,9 @@
       "source_font": "Noto Serif Ethiopic (Google)",
       "source_url": "https://fonts.google.com/noto/specimen/Noto+Serif+Ethiopic",
       "license": "OFL",
-      "trigger": "U+E000 (Private Use Area)",
+      "trigger": "U+139A (Ethiopic Supplement, unassigned)",
       "widened_letters": ["መ series", "ጠ series", "ሠ series", "ሐ series", "ወ series"],
-      "notes": "5 consonant series × 7 vowel orders = 35 stretchable fidels; matches the manuscript calligraphic tradition of widening horizontal decorative strokes."
+      "notes": "5 consonant series × 7 vowel orders = 35 stretchable fidels. me/hha/wa use symmetric 3-column widening (calligraphic result); sza/tha still on legacy one-sided algorithm (visible artifacts at high levels). Confirmed working in offline apps via hb-shape; browser rendering blocked by a Chrome font-selection heuristic that overrides @font-face for the trigger codepoint."
     }
   ]
 }
