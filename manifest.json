@@ -1,7 +1,7 @@
 {
   "name": "semitic-stretch-fonts",
   "description": "Custom Semitic-script fonts with kashida-style horizontal widening ligatures for scribal-style column justification, plus centered mark positioning for Arabic vowels stacked on Hebrew consonants (Judeo-Arabic use).",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "trigger_codepoints": {
     "hebrew": "U+05C6",
     "syriac": "U+070D",
@@ -194,6 +194,17 @@
       "license": "OFL",
       "trigger": "U+E000 (Private Use Area)",
       "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"]
+    },
+    {
+      "file": "fonts/syriac/SemiticStretchRamsina.ttf",
+      "family": "Semitic Stretch Ramsina",
+      "script": "Syriac",
+      "source_font": "Ramsina (SIL Global)",
+      "source_url": "https://software.sil.org/ramsina/",
+      "license": "OFL",
+      "trigger": "U+070D (Syriac Harklean Asteriscus)",
+      "widened_letters": ["ܒ", "ܕ", "ܪ", "ܬ"],
+      "notes": "Cursive East Syriac at UPM=2048. Reserved-name derivative — 'Ramsina' and 'SIL' are OFL §3 reserved names for the upstream. Widens the ISOLATED forms only; for dual-joining letters (beth) this means end-of-word occurrences."
     },
     {
       "file": "fonts/ethiopic/SemiticStretchNotoSerifEthiopic.ttf",

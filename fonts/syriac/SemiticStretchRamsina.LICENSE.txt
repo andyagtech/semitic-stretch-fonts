@@ -1,0 +1,22 @@
+Semitic Stretch Ramsina
+Derived from: Ramsina (SIL Global)
+Upstream: https://software.sil.org/ramsina/
+License: OFL
+
+Full license text: ../../licenses/OFL.txt
+
+Notes:
+Cursive East Syriac at UPM=2048. Derived from the SIL Global "Ramsina"
+release (originally Sparksoft "Nohadra" family, 1997–2025). Reserved
+Font Names per OFL §3: "Ramsina" and "SIL" (upstream), plus "Marcus"
+and "Nohadra" (Sparksoft). This derivative uses none of them and ships
+as "Semitic Stretch Ramsina".
+
+Kashida-style widening on 4 letters via GSUB ligatures on U+070D SYRIAC
+HARKLEAN ASTERISCUS:
+  beth ܒ, dalath ܕ, rish ܪ, taw ܬ
+16 pre-baked stretch variants per letter. Because Ramsina is cursive
+(supports Syriac init/medi/fina joining), the widening applies to the
+ISOLATED form only — for right-joining letters (dalath, rish) that
+covers every use since they always break the joining run; for
+dual-joining letters (beth, taw) that covers end-of-word occurrences.
