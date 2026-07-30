@@ -164,17 +164,6 @@
       "notes": "Semi-cursive Rashi commentary script."
     },
     {
-      "file": "fonts/syriac/SemiticStretchNotoSansSyriac.ttf",
-      "family": "Semitic Stretch Noto Sans Syriac",
-      "script": "Syriac",
-      "source_font": "Noto Sans Syriac (Google)",
-      "source_url": "https://fonts.google.com/noto/specimen/Noto+Sans+Syriac",
-      "license": "OFL",
-      "trigger": "U+E000 (Private Use Area)",
-      "widened_letters": ["ܐ", "ܒ", "ܕ", "ܗ", "ܘ", "ܡ", "ܣ", "ܪ", "ܫ", "ܬ"],
-      "notes": "Also preserves native U+0640 tatweel for cursive bridging."
-    },
-    {
       "file": "fonts/syriac/SemiticStretchNohadraSapna.ttf",
       "family": "Semitic Stretch Nohadra Sapna",
       "script": "Syriac",
